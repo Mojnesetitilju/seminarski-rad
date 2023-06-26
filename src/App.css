@@ -1,38 +1,70 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 95vh;
 }
-
-.App-link {
-  color: #61dafb;
+.header {
+  color: darkslategray;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  width: 100%;
+  max-width: 50rem;
+  list-style: none;
+  overflow: auto;
+}
+.message {
+  display: flex;
+  margin-top: 1rem;
+}
+.my-message {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.user-color {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 1rem 0;
+}
+.message-body .username {
+  color: dimgrey;
+  font-size: large;
+}
+.message-body .text {
+  display: inline-block;
+  border: 0.15rem solid #085f63;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.3rem;
+  background-color: #f5e1da;
+}
+.my-message .text {
+  background-color: #49beb7;
+}
+form {
+  display: flex;
+  width: 100%;
+  max-width: 50rem;
+  justify-content: space-around;
+}
+input {
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: 3px solid #49beb7;
+  flex-grow: 1;
+  color: #085f63;
+}
+input::placeholder {
+  color: #085f63;
+}
+button {
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.3rem;
+  color: #f1f1f1;
+  background-color: #085f63;
+}
+.input {
+  position: fixed;
 }
