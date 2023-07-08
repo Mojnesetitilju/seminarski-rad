@@ -22,7 +22,7 @@ function App() {
   });
 
   useEffect(() => {
-    const drone = new window.Scaledrone("", {
+    const drone = new window.Scaledrone("ZuyAvdFZgFhSPAel", {
       data: user,
     });
 
@@ -43,7 +43,7 @@ function App() {
     };
   }, []);
   const handleInput = (input) => {
-    const drone = new window.Scaledrone("");
+    const drone = new window.Scaledrone("ZuyAvdFZgFhSPAel");
 
     drone.on("open", (error) => {
       if (error) {
